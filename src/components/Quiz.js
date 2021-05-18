@@ -65,8 +65,8 @@ const Quiz = () => {
     }
 
     useEffect(() => {
-
-        axios.get('https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple')
+        console.log("----------------------hello world, we made it")
+        axios.get('/getQuestionnare')
             .then(res => {
                 setQuiz(res.data.results.map(item => (
 
